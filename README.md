@@ -48,5 +48,3 @@ Enable multi-factor authentication (MFA) wherever possible.
 
 Avoid using personal information in passwords.
 
-📜 License
-This project is open-source and available under the MIT License.
