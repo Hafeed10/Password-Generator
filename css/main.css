@@ -1,5 +1,5 @@
 :root {
-	--background-clr: #f9fafb;
+	--background-clr: #94a9be;
 	--text-clr: #212427;
 	--light-clr: #fff;
 	--gray-clr: lightgray;
@@ -8,7 +8,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--background-clr: #0090a0c5;
-		--text-clr: #f9fafb;
+		--text-clr: #efe3e3;
 		--light-clr: #fff;
 		--gray-clr: rgb(168, 142, 26);
 	}
@@ -21,7 +21,6 @@
 body {
 	margin: 0;
 	background-color: var(--background-clr);
-	color: var(--text-clr);
 	font-family: 'Poppins', sans-serif;
 	overflow-x: hidden;
 	line-height: 1.6;
@@ -41,20 +40,17 @@ input[type=password]::-ms-clear {
 select#passwordType {
 	padding-block: 0.5rem;
 	padding-inline: 1rem;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 1rem;
 	border: none;
-	border-radius: 1rem;
 	margin-left: 1rem;
 	font-family: 'Poppins', sans-serif;
-
 	box-shadow: 0px 1px 8px rgba(4, 4, 4, 0.1);
 }
 
 #partMain {
 	background-color: rgb(209, 54, 78);
 	padding-bottom: 5rem;
-
 	transition: background-color .85s;
 }
 
@@ -64,12 +60,11 @@ nav {
 
 nav :is(h2, p) {
 	margin: 0;
-	color: var(--light-clr);
 }
 
 #title {
 	color: var(--light-clr);
-	font-weight: 800;
+	font-weight: 600;
 }
 
 #partMain h2 {
@@ -85,10 +80,25 @@ nav :is(h2, p) {
 	text-align: center;
 }
 
+.container1 {
+	width: min(50%, 70.5rem);
+	margin-inline: auto;
+	padding-block: 2rem;
+	padding: 40px;
+	border-radius: 0.625rem;
+	background-color: rgba(139, 48, 48, 0.49);
+}
+
+.container1 h2 {
+	font-weight: 800;
+	font-size: 30px;
+}
+
 .container {
 	width: min(80%, 70.5rem);
 	margin-inline: auto;
 }
+
 
 .password-card {
 	background-color: var(--light-clr);
@@ -113,6 +123,10 @@ nav :is(h2, p) {
 	margin-bottom: 2rem;
 }
 
+#passwordLengthText {
+	font-weight: 500;
+}
+
 #passwordLength {
 	margin-top: 1rem;
 	-webkit-appearance: none;
@@ -131,13 +145,14 @@ nav :is(h2, p) {
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	background: black;
+	background: rgba(168, 111, 12, 0.662);
 	cursor: pointer;
 }
 
 label {
 	color: var(--light-clr);
-	font-weight: bold;
+	font-weight: 500;
+	font-size: 13px;
 }
 
 .progress-bar {
@@ -195,7 +210,7 @@ button {
 	outline: none;
 	border: none;
 	font-weight: bold;
-	background-color: #272621;
+	background-color: #deba0955;
 	color: var(--text-clr);
 	cursor: pointer;
 	transition: .2s;
@@ -203,7 +218,7 @@ button {
 }
 
 button:hover {
-	background-color: var(--gray-clr);
+	background-color: rgba(210, 187, 13, 0.527);
 	transition: .2s;
 }
 
